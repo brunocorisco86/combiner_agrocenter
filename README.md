@@ -64,6 +64,36 @@ O objetivo principal deste projeto é consolidar os dados de diversos sensores, 
    ```
    O script criará automaticamente as pastas `outputs/` e `database/` na raiz do projeto para armazenar os arquivos de saída, caso elas não existam.
 
+## Estrutura do Diretório
+
+A estrutura de pastas e arquivos esperada para o projeto é a seguinte:
+
+```
+combiner_agrocenter/
+│
+├── assets/
+│   └── dados_sensores/
+│       └── exemplo_sensor_data.xlsx  # Arquivos Excel de entrada devem ser colocados aqui
+│
+├── database/
+│   └── dados_sensores.db             # Banco de dados SQLite gerado pelo script
+│
+├── outputs/
+│   ├── dados_combinados.csv          # CSV com todos os dados processados
+│   ├── nulos_data.csv                # CSV com linhas que tiveram problemas
+│   └── processamento_nulos.log       # Log do processamento
+│
+├── src/
+│   └── combine_sheets.py             # Script principal de processamento
+│
+├── venv/                             # Ambiente virtual (opcional, mas recomendado)
+│
+├── .gitignore                        # Arquivo para especificar arquivos não rastreados pelo Git
+├── LICENSE                           # Arquivo de licença do projeto
+├── README.md                         # Este arquivo
+└── requirements.txt                  # Lista de dependências Python
+```
+
 ## Formato dos Dados de Entrada e Saída
 
 ### Dados de Entrada (Arquivos Excel `.xlsx`)
