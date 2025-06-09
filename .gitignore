@@ -1,7 +1,7 @@
-Arquivos e diretórios a ignorar
-
-*.xlsx *.csv *.log *.db *.sqlite3 pycache/ *.pyc
-
-Exceções para diretórios e arquivos de configuração
-
-!assets/dados_sensores/.gitkeep !outputs/.gitkeep !database/.gitkeep !documents/.gitkeep !documents/ !README.md !.gitignore
+*.xlsx 
+*.csv 
+*.log 
+*.db 
+*.sqlite3 
+pycache/ 
+*.pyc
