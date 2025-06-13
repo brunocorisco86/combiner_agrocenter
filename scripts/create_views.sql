@@ -546,4 +546,3 @@ LEFT JOIN vw_report_wtemp_by_days wt ON w.aviario = wt.aviario AND w.feed_phase 
 LEFT JOIN vw_report_water_by_days wa ON w.aviario = wa.aviario AND w.feed_phase = wa.feed_phase
 LEFT JOIN vw_report_electricity_by_days e ON w.aviario = e.aviario AND w.feed_phase = e.feed_phase
 LEFT JOIN vw_report_feed_by_days f ON w.aviario = f.aviario AND w.feed_phase = f.feed_phase;
-s
